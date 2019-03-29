@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		518C3423224E220E00B0D351 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 518C3422224E220E00B0D351 /* AppDelegate.m */; };
+		518C3426224E220E00B0D351 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 518C3425224E220E00B0D351 /* ViewController.m */; };
+		518C3428224E220F00B0D351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518C3427224E220F00B0D351 /* Assets.xcassets */; };
+		518C342E224E220F00B0D351 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 518C342D224E220F00B0D351 /* main.m */; };
+		518C3439224E220F00B0D351 /* HitToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 518C3438224E220F00B0D351 /* HitToolTests.m */; };
+		518C3444224E220F00B0D351 /* HitToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 518C3443224E220F00B0D351 /* HitToolUITests.m */; };
+		948DD936224E3D50008F6316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518C3429224E220F00B0D351 /* Main.storyboard */; };
+		948DD938224E3EBD008F6316 /* command.sh in Resources */ = {isa = PBXBuildFile; fileRef = 948DD937224E3EBC008F6316 /* command.sh */; };
+		948DD93A224E44F8008F6316 /* darkmode.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 948DD939224E44F7008F6316 /* darkmode.scpt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		518C3435224E220F00B0D351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 518C3416224E220D00B0D351 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 518C341D224E220E00B0D351;
+			remoteInfo = HitTool;
+		};
+		518C3440224E220F00B0D351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 518C3416224E220D00B0D351 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 518C341D224E220E00B0D351;
+			remoteInfo = HitTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		518C341E224E220E00B0D351 /* HitTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HitTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		518C3421224E220E00B0D351 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		518C3422224E220E00B0D351 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		518C3424224E220E00B0D351 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		518C3425224E220E00B0D351 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		518C3427224E220F00B0D351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		518C342A224E220F00B0D351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		518C342C224E220F00B0D351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		518C342D224E220F00B0D351 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		518C342F224E220F00B0D351 /* HitTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HitTool.entitlements; sourceTree = "<group>"; };
+		518C3434224E220F00B0D351 /* HitToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		518C3438224E220F00B0D351 /* HitToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitToolTests.m; sourceTree = "<group>"; };
+		518C343A224E220F00B0D351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		518C343F224E220F00B0D351 /* HitToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		518C3443224E220F00B0D351 /* HitToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitToolUITests.m; sourceTree = "<group>"; };
+		518C3445224E220F00B0D351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		948DD937224E3EBC008F6316 /* command.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = command.sh; sourceTree = "<group>"; };
+		948DD939224E44F7008F6316 /* darkmode.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = darkmode.scpt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		518C341B224E220E00B0D351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518C3431224E220F00B0D351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518C343C224E220F00B0D351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		518C3415224E220D00B0D351 = {
+			isa = PBXGroup;
+			children = (
+				518C3420224E220E00B0D351 /* HitTool */,
+				518C3437224E220F00B0D351 /* HitToolTests */,
+				518C3442224E220F00B0D351 /* HitToolUITests */,
+				518C341F224E220E00B0D351 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		518C341F224E220E00B0D351 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				518C341E224E220E00B0D351 /* HitTool.app */,
+				518C3434224E220F00B0D351 /* HitToolTests.xctest */,
+				518C343F224E220F00B0D351 /* HitToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		518C3420224E220E00B0D351 /* HitTool */ = {
+			isa = PBXGroup;
+			children = (
+				948DD937224E3EBC008F6316 /* command.sh */,
+				948DD939224E44F7008F6316 /* darkmode.scpt */,
+				518C3421224E220E00B0D351 /* AppDelegate.h */,
+				518C3422224E220E00B0D351 /* AppDelegate.m */,
+				518C3424224E220E00B0D351 /* ViewController.h */,
+				518C3425224E220E00B0D351 /* ViewController.m */,
+				518C3427224E220F00B0D351 /* Assets.xcassets */,
+				518C3429224E220F00B0D351 /* Main.storyboard */,
+				518C342C224E220F00B0D351 /* Info.plist */,
+				518C342D224E220F00B0D351 /* main.m */,
+				518C342F224E220F00B0D351 /* HitTool.entitlements */,
+			);
+			path = HitTool;
+			sourceTree = "<group>";
+		};
+		518C3437224E220F00B0D351 /* HitToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				518C3438224E220F00B0D351 /* HitToolTests.m */,
+				518C343A224E220F00B0D351 /* Info.plist */,
+			);
+			path = HitToolTests;
+			sourceTree = "<group>";
+		};
+		518C3442224E220F00B0D351 /* HitToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				518C3443224E220F00B0D351 /* HitToolUITests.m */,
+				518C3445224E220F00B0D351 /* Info.plist */,
+			);
+			path = HitToolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		518C341D224E220E00B0D351 /* HitTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 518C3448224E220F00B0D351 /* Build configuration list for PBXNativeTarget "HitTool" */;
+			buildPhases = (
+				518C341A224E220E00B0D351 /* Sources */,
+				518C341B224E220E00B0D351 /* Frameworks */,
+				518C341C224E220E00B0D351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HitTool;
+			productName = HitTool;
+			productReference = 518C341E224E220E00B0D351 /* HitTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		518C3433224E220F00B0D351 /* HitToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 518C344B224E220F00B0D351 /* Build configuration list for PBXNativeTarget "HitToolTests" */;
+			buildPhases = (
+				518C3430224E220F00B0D351 /* Sources */,
+				518C3431224E220F00B0D351 /* Frameworks */,
+				518C3432224E220F00B0D351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				518C3436224E220F00B0D351 /* PBXTargetDependency */,
+			);
+			name = HitToolTests;
+			productName = HitToolTests;
+			productReference = 518C3434224E220F00B0D351 /* HitToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		518C343E224E220F00B0D351 /* HitToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 518C344E224E220F00B0D351 /* Build configuration list for PBXNativeTarget "HitToolUITests" */;
+			buildPhases = (
+				518C343B224E220F00B0D351 /* Sources */,
+				518C343C224E220F00B0D351 /* Frameworks */,
+				518C343D224E220F00B0D351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				518C3441224E220F00B0D351 /* PBXTargetDependency */,
+			);
+			name = HitToolUITests;
+			productName = HitToolUITests;
+			productReference = 518C343F224E220F00B0D351 /* HitToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		518C3416224E220D00B0D351 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = dillon;
+				TargetAttributes = {
+					518C341D224E220E00B0D351 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					518C3433224E220F00B0D351 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 518C341D224E220E00B0D351;
+					};
+					518C343E224E220F00B0D351 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 518C341D224E220E00B0D351;
+					};
+				};
+			};
+			buildConfigurationList = 518C3419224E220D00B0D351 /* Build configuration list for PBXProject "HitTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 518C3415224E220D00B0D351;
+			productRefGroup = 518C341F224E220E00B0D351 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				518C341D224E220E00B0D351 /* HitTool */,
+				518C3433224E220F00B0D351 /* HitToolTests */,
+				518C343E224E220F00B0D351 /* HitToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		518C341C224E220E00B0D351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948DD93A224E44F8008F6316 /* darkmode.scpt in Resources */,
+				948DD938224E3EBD008F6316 /* command.sh in Resources */,
+				518C3428224E220F00B0D351 /* Assets.xcassets in Resources */,
+				948DD936224E3D50008F6316 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518C3432224E220F00B0D351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518C343D224E220F00B0D351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		518C341A224E220E00B0D351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518C3426224E220E00B0D351 /* ViewController.m in Sources */,
+				518C342E224E220F00B0D351 /* main.m in Sources */,
+				518C3423224E220E00B0D351 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518C3430224E220F00B0D351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518C3439224E220F00B0D351 /* HitToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518C343B224E220F00B0D351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518C3444224E220F00B0D351 /* HitToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		518C3436224E220F00B0D351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 518C341D224E220E00B0D351 /* HitTool */;
+			targetProxy = 518C3435224E220F00B0D351 /* PBXContainerItemProxy */;
+		};
+		518C3441224E220F00B0D351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 518C341D224E220E00B0D351 /* HitTool */;
+			targetProxy = 518C3440224E220F00B0D351 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		518C3429224E220F00B0D351 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				518C342A224E220F00B0D351 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		518C3446224E220F00B0D351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		518C3447224E220F00B0D351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		518C3449224E220F00B0D351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = HitTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitnology.HitTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		518C344A224E220F00B0D351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = HitTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitnology.HitTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		518C344C224E220F00B0D351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CRP7A6W3PT;
+				INFOPLIST_FILE = HitToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitnology.HitToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HitTool.app/Contents/MacOS/HitTool";
+			};
+			name = Debug;
+		};
+		518C344D224E220F00B0D351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CRP7A6W3PT;
+				INFOPLIST_FILE = HitToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitnology.HitToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HitTool.app/Contents/MacOS/HitTool";
+			};
+			name = Release;
+		};
+		518C344F224E220F00B0D351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CRP7A6W3PT;
+				INFOPLIST_FILE = HitToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitnology.HitToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HitTool;
+			};
+			name = Debug;
+		};
+		518C3450224E220F00B0D351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CRP7A6W3PT;
+				INFOPLIST_FILE = HitToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitnology.HitToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HitTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		518C3419224E220D00B0D351 /* Build configuration list for PBXProject "HitTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518C3446224E220F00B0D351 /* Debug */,
+				518C3447224E220F00B0D351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		518C3448224E220F00B0D351 /* Build configuration list for PBXNativeTarget "HitTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518C3449224E220F00B0D351 /* Debug */,
+				518C344A224E220F00B0D351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		518C344B224E220F00B0D351 /* Build configuration list for PBXNativeTarget "HitToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518C344C224E220F00B0D351 /* Debug */,
+				518C344D224E220F00B0D351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		518C344E224E220F00B0D351 /* Build configuration list for PBXNativeTarget "HitToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518C344F224E220F00B0D351 /* Debug */,
+				518C3450224E220F00B0D351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 518C3416224E220D00B0D351 /* Project object */;
+}
