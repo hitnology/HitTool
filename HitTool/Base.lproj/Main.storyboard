@@ -676,6 +676,7 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
                     <connections>
                         <outlet property="contentMenu" destination="zjr-2x-JDT" id="exb-sN-HM1"/>
+                        <outlet property="preventFromSleepingMenuItem" destination="iwN-lL-NuD" id="cU3-mO-USd"/>
                         <outlet property="triggerDisktopIconsMenuItem" destination="nMe-Yq-CRW" id="MLX-yE-IPI"/>
                     </connections>
                 </customObject>
@@ -693,7 +694,13 @@
                                 <action selector="buttonTouched:" target="Voe-Tx-rLC" id="98c-W5-gHF"/>
                             </connections>
                         </menuItem>
-                        <menuItem title="Quit" tag="2" id="SZq-pi-JRl">
+                        <menuItem title="Prevent from Sleeping" tag="2" id="iwN-lL-NuD">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="buttonTouched:" target="Voe-Tx-rLC" id="a2K-XS-Epe"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Quit" tag="3" id="SZq-pi-JRl">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="buttonTouched:" target="Voe-Tx-rLC" id="lMc-Tr-B6h"/>

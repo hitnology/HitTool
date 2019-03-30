@@ -15,6 +15,7 @@
 }
 
 @property (weak) IBOutlet NSMenuItem *triggerDisktopIconsMenuItem;
+@property (weak) IBOutlet NSMenuItem *preventFromSleepingMenuItem;
 
 @end
 

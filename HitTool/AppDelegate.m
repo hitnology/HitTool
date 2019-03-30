@@ -15,6 +15,7 @@
 @property (weak) IBOutlet NSMenu *contentMenu;
 @property (nonatomic, copy) NSString *hideDesktopPath;
 @property (nonatomic, copy) NSString *darkmodePath;
+//@property (nonatomic, strong) NSBlockOperation *caffeinateOperation;
 
 @end
 
@@ -32,6 +33,7 @@
     self.darkmodePath = [[NSBundle mainBundle] pathForResource:@"darkmode" ofType:@"scpt"];
     
     [self readDesktopConfig];
+    self.preventFromSleepingMenuItem.state = [self detectCaffeineRunning];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -40,7 +42,7 @@
 
 #pragma mark - IBAction
 - (IBAction)buttonTouched:(id)sender {
-    NSInteger tag = [(NSButton *)sender tag];
+    NSInteger tag = [(NSMenuItem *)sender tag];
     if (tag == 0) {
         [self triggerDesktopIconsHide:!isDesktopIconsShow];
     }
@@ -48,6 +50,12 @@
         [self switchSystemTheme];
     }
     else if (tag == 2) {
+        NSMenuItem *item = (NSMenuItem *)sender;
+        [self toggleSleep:!item.state];
+        item.state = 1 - item.state;
+    }
+    else if (tag == 3) {
+        [self toggleSleep:NO];
         [NSApp terminate:self];
     }
 }
@@ -99,6 +107,29 @@
     task.currentDirectoryPath = @"/";
     
     [task launch];
+}
+         
+#pragma mark - Caffeinate
+- (void)toggleSleep:(BOOL)sleep {
+    if (sleep) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            NSTask *task = [[NSTask alloc] init];
+            [task setLaunchPath:@"/usr/bin/caffeinate"];
+            [task launch];
+        });
+    }
+    else {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            NSTask *task = [[NSTask alloc] init];
+            [task setLaunchPath:@"/usr/bin/killall"];
+            [task setArguments:@[@"caffeinate"]];
+            [task launch];
+        });
+    }
+}
+
+- (BOOL)detectCaffeineRunning {
+    return system("ps -Ac | grep 'caffeinate' > /dev/null") == 0;
 }
 
 @end
