@@ -55,6 +55,9 @@
         item.state = 1 - item.state;
     }
     else if (tag == 3) {
+        [self launchScreenSaver];
+    }
+    else if (tag == 4) {
         [self toggleSleep:NO];
         [NSApp terminate:self];
     }
@@ -130,6 +133,11 @@
 
 - (BOOL)detectCaffeineRunning {
     return system("ps -Ac | grep 'caffeinate' > /dev/null") == 0;
+}
+
+#pragma mark - Screen Saver
+- (void)launchScreenSaver {
+    system("/System/Library/CoreServices/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine");
 }
 
 @end

@@ -700,7 +700,13 @@
                                 <action selector="buttonTouched:" target="Voe-Tx-rLC" id="a2K-XS-Epe"/>
                             </connections>
                         </menuItem>
-                        <menuItem title="Quit" tag="3" id="SZq-pi-JRl">
+                        <menuItem title="Launch ScreenSaver" tag="3" id="LDp-sM-FRg">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="buttonTouched:" target="Voe-Tx-rLC" id="UDi-he-IEI"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Quit" tag="4" id="SZq-pi-JRl">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="buttonTouched:" target="Voe-Tx-rLC" id="lMc-Tr-B6h"/>
