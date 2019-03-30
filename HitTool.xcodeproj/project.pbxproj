@@ -13,6 +13,7 @@
 		518C342E224E220F00B0D351 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 518C342D224E220F00B0D351 /* main.m */; };
 		518C3439224E220F00B0D351 /* HitToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 518C3438224E220F00B0D351 /* HitToolTests.m */; };
 		518C3444224E220F00B0D351 /* HitToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 518C3443224E220F00B0D351 /* HitToolUITests.m */; };
+		94481B9C224FA7DC00321C71 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94481B9E224FA7DC00321C71 /* Localizable.strings */; };
 		948DD936224E3D50008F6316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518C3429224E220F00B0D351 /* Main.storyboard */; };
 		948DD938224E3EBD008F6316 /* command.sh in Resources */ = {isa = PBXBuildFile; fileRef = 948DD937224E3EBC008F6316 /* command.sh */; };
 		948DD93A224E44F8008F6316 /* darkmode.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 948DD939224E44F7008F6316 /* darkmode.scpt */; };
@@ -52,6 +53,9 @@
 		518C343F224E220F00B0D351 /* HitToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		518C3443224E220F00B0D351 /* HitToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitToolUITests.m; sourceTree = "<group>"; };
 		518C3445224E220F00B0D351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94481B93224FA53B00321C71 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		94481B9D224FA7DC00321C71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		94481B9F224FA7DE00321C71 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		948DD937224E3EBC008F6316 /* command.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = command.sh; sourceTree = "<group>"; };
 		948DD939224E44F7008F6316 /* darkmode.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = darkmode.scpt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +119,7 @@
 				518C342C224E220F00B0D351 /* Info.plist */,
 				518C342D224E220F00B0D351 /* main.m */,
 				518C342F224E220F00B0D351 /* HitTool.entitlements */,
+				94481B9E224FA7DC00321C71 /* Localizable.strings */,
 			);
 			path = HitTool;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 518C3415224E220D00B0D351;
 			productRefGroup = 518C341F224E220E00B0D351 /* Products */;
@@ -245,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94481B9C224FA7DC00321C71 /* Localizable.strings in Resources */,
 				948DD93A224E44F8008F6316 /* darkmode.scpt in Resources */,
 				948DD938224E3EBD008F6316 /* command.sh in Resources */,
 				518C3428224E220F00B0D351 /* Assets.xcassets in Resources */,
@@ -315,8 +322,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				518C342A224E220F00B0D351 /* Base */,
+				94481B93224FA53B00321C71 /* zh-Hans */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94481B9E224FA7DC00321C71 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94481B9D224FA7DC00321C71 /* en */,
+				94481B9F224FA7DE00321C71 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -326,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -385,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

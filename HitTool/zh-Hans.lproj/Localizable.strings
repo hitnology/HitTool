@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  HitTool
+
+  Created by Ryana on 2019/3/30.
+  Copyright © 2019 dillon. All rights reserved.
+*/
+"Hide Desktop Icons" = "隐藏桌面文件";
+"Show Desktop Icons" = "显示桌面文件";

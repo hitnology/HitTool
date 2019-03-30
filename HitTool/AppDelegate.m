@@ -81,10 +81,10 @@
     NSString *grepOutput = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
     isDesktopIconsShow = [grepOutput boolValue];
     if (isDesktopIconsShow) {
-        [self.triggerDisktopIconsMenuItem setTitle:@"Hide Desktop Icons"];
+        [self.triggerDisktopIconsMenuItem setTitle:NSLocalizedString(@"Hide Desktop Icons", nil)];
     }
     else {
-        [self.triggerDisktopIconsMenuItem setTitle:@"Show Desktop Icons"];
+        [self.triggerDisktopIconsMenuItem setTitle:NSLocalizedString(@"Show Desktop Icons", nil)];
     }
 }
 
